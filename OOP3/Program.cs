@@ -7,9 +7,9 @@ namespace OOP3
         static void Main(string[] args)
         {
 
-            DemandCreditManager demandCreditManager = new DemandCreditManager();
-            VehicleCreditManager vehicleCreditManager = new VehicleCreditManager();
-            MortgageCreditManager mortgageCreditManager = new MortgageCreditManager();
+            ICreditManager demandCreditManager = new DemandCreditManager();
+            ICreditManager vehicleCreditManager = new VehicleCreditManager();
+            ICreditManager mortgageCreditManager = new MortgageCreditManager();
 
             ILoggerService databaseLoggerService = new DatabaseLoggerService();
             ILoggerService fileLoggerService = new FileLoggerService();
